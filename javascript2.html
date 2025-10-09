@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>section B</title>
+</head>
+<body>
+	<script>
+	let emp={
+		name: "Riya",
+		age: 20,
+		isEmployee: true,
+		city: null,
+		email: undefined,
+		skills:["Javascript", "HTML", 'CSS'],
+		Address: {
+			street: "MG Road", 
+			zip:390001
+		}
+		};
+		emp.country="India";
+		console.log(emp);
+		
+		//1. Add new property
+		
+		console.log("1. after adding 'country'");
+		console.log(emp.country);
+		
+		//2. Remove the property element
+		delete emp.email;
+		console.log('email' in emp);
+		
+		//3. update the property name to 'Raju'
+		emp.name='Raju';
+		console.log(emp.name);
+		
+		//4. insert react as the last element of the skills array.
+		emp.skills.push("React")
+		console.log("After inserting 'React' into skills array");
+		
+		//5. Change the value of the street property
+		emp.Address.street='Brigade Road';
+		console.log("After changing the street: ", emp);
+		
+		//6. 
+		console.log("Table formate");
+		console.table(emp);
+		
+		//7.
+		console.log("Type of all thr property");
+		for(let i in emp){
+			console.log(i);
+			console.log(typeof emp[i]);
+			}
+	</script>
+
+</body>
+</html>
