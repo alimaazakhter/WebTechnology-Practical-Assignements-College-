@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>My Profile - Alimaaz Akhter</title>
+	<!-- Page stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Google font (optional) -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Header (shared) -->
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="logo-wrap">
+				<img src="assets/logo.svg" alt="Logo" class="logo">
+				<h1 class="site-title">Alimaaz Akhter</h1>
+			</div>
+			<nav class="main-nav" aria-label="Main navigation">
+				<ul>
+					<li><a href="my_portfolio.html">About Me</a></li>
+					<li><a href="login.html">Login</a></li>
+					<li><a href="profile.html">My Profile</a></li>
+					<li><a href="contact.html">Contact Details</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Main content -->
+	<main class="container">
+		<!-- Education section -->
+		<section class="card fade-in" id="education">
+			<h2>🎓 Academic Journey</h2>
+			<p class="mb-4">My educational background in computer science and data analytics.</p>
+			
+			<!-- Education table -->
+			<table>
+				<thead>
+					<tr>
+						<th>Degree</th>
+						<th>Institution</th>
+						<th>Years</th>
+						<th>Details</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Master of Computer Applications (MCA)</td>
+						<td>Sardar Vallabhbhai Global University (SVGU), Ahmedabad</td>
+						<td>2025 - 2027</td>
+						<td>Focus on advanced ML/AI and Generative AI applications</td>
+					</tr>
+					<tr>
+						<td>Bachelor of Computer Applications (BCA)</td>
+						<td>Rai School of Engineering (RU), Ahmedabad</td>
+						<td>2022 - 2025</td>
+						<td>CGPA: 8.58/10. Strong foundation in programming and data concepts</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Projects section -->
+		<section class="card fade-in-delay-1" id="projects">
+			<h2>🚀 Key Projects</h2>
+			<p class="mb-4">Showcase of my technical projects and accomplishments.</p>
+			
+			<div class="projects-grid">
+				<article class="project-card">
+					<h4>Heart Disease Prediction (ML + Streamlit)</h4>
+					<p>Building a machine learning model to predict the risk of heart disease based on clinical data (age, cholesterol, blood pressure). Planning integration with a user-friendly Flask web application.</p>
+					<span class="tech-used">Tech: Python, scikit-learn, Flask (planned)</span>
+				</article>
+
+				<article class="project-card">
+					<h4>GLR Pipeline Tool (Text Extraction + Auto Placement)</h4>
+					<p>End-to-end tool to extract key data from scanned PDFs/images using Tesseract OCR and OpenCV preprocessing. Created a custom pipeline to identify and fill blank fields, improving accuracy in unstructured layouts.</p>
+					<span class="tech-used">Tech: Tesseract OCR, OpenCV, Python</span>
+				</article>
+
+				<article class="project-card">
+					<h4>Risk Analysis in Banking and Financial Services (Dashboard)</h4>
+					<p>Cleaned and analyzed large-scale banking datasets using Python/Pandas. Performed EDA to detect patterns, correlations, and high-risk segments. Visualized insights using an interactive Power BI dashboard.</p>
+					<span class="tech-used">Tech: Python (Pandas, EDA), Power BI</span>
+				</article>
+			</div>
+		</section>
+
+		<!-- Achievements section -->
+		<section class="card fade-in-delay-2" id="achievements">
+			<h2>🏆 Certifications and Achievements</h2>
+			<p class="mb-4">Professional certifications and recognitions in data science and AI.</p>
+			
+			<!-- Achievements list -->
+
+				<li>Introduction to RAG (AI/LLM) - IBM, SkillsBuild (Sept 2025)</li>
+				<li>Gemini for Google Workspace - Google Cloud, Skillup (Aug 2025)</li>
+				<li>Introduction to Generative AI Course - Google Cloud (June 2025)</li>
+				<li>Tata Data Visualization - Forage (Feb 2025)</li>
+			
+		</section>
+	</main>
+
+	<!-- Footer (shared) -->
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© 2025 Alimaaz Akhter</p>
+			<p><a href="https://www.linkedin.com/in/alimaaz-akhter-38014a240/" target="_blank" rel="noopener">LinkedIn</a></p>
+		</div>
+	</footer>
+
+</body>
+</html>
