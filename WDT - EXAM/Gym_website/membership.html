@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Membership</title>
+<link rel="stylesheet" href="style.css">
+</link><link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Iron Beast Gym</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<main>
+<section class="membership">
+    <h2>Membership Plans</h2>
+    <ul class="plans">
+        <li><span class="price">₹1000 / Month</span> – <span class="plan-text">Unlimited Workout</span></li>
+        <li><span class="price">₹2500 / 3 Months</span> – <span class="plan-text">Personal Training</span></li>
+        <li><span class="price">₹4500 / 6 Months</span> – <span class="plan-text">Diet + Training</span></li>
+    </ul>
+</section>
+
+<section class="form-section">
+    <h2>Join Gym</h2>
+    <form id="gymForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="goal" placeholder="Fitness Goal" required>
+        <select id="plan" required>
+            <option value="" disabled selected>Select Plan</option>
+            <option value="₹1000 / Month – Unlimited Workout">₹1000 / Month – Unlimited Workout</option>
+            <option value="₹2500 / 3 Months – Personal Training">₹2500 / 3 Months – Personal Training</option>
+            <option value="₹4500 / 6 Months – Diet + Training">₹4500 / 6 Months – Diet + Training</option>
+        </select>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="mobile" placeholder="Mobile Number" required>
+        <input type="password" id="password" placeholder="Create Password" required>
+        <button type="submit">Register</button>
+    </form>
+    <p id="msg"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>Email: ironbeastgym@gmail.com</p>
+    <p>© 2025 Iron Beast Gym. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
