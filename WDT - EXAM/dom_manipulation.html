@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+	</head>
+	<body>
+	<h3>DOM Manipulation</h3>
+	<p>This is file about DOM Manipulation</p>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div class="first">This is first div</div>
+	<div id="second">I am learning javascript</div>
+		<script>
+			// document.getElementById("second").innerHTML = "<b>This is updated text content by innerHTML</b>";
+			// document.getElementById("second").textContent = "<b>This is updated text content by innerHTML</b>";		//It display text as it is.
+			
+			// let second = document.getElementById("second");
+			let second = document.querySelector("#second");
+			second.style.backgroundColor = "red";
+			second.style.backgroundColor="#ffFF00";
+			second.style.fontSize = "30px";
+
+			// let first = document.querySelector(".first");
+			// first.style.backgroundColor = "blue";
+
+			// let first = document.querySelector("p");
+			// first.style.backgroundColor = "blue";
+
+			let all = document.querySelectorAll(".first");
+			for(let i of all)
+			{
+				i.style.color = "red";
+			}
+		</script>
+	</body>
+</html>
