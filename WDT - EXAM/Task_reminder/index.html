@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">
+            <h1>List Item</h1>
+            <div class="item-container">
+                <input type="text" name="item" id="item" placeholder="Add Item" class="input-item">
+                <div class="items-item">
+                    <input class="btn" type="button" value="ADD ITEM" onclick="addItem()">
+                    <input class="btn" type="button" value="CLEAR LIST" onclick="clearItem()">
+                </div>
+
+                <input type="search" name="search" class="input-item" placeholder="Search Task..."
+                    onkeyup="searchItem()" id="search">
+            </div>
+            <div class="item-container">
+                <table border="1" id="reminder">
+                    <tr class="tbl-heading">
+                        <th>No</th>
+                        <th>Reminder</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
