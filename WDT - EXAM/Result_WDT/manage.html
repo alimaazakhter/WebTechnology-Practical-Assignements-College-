@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Result</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+
+<h2>Student Result Form</h2>
+
+<form onsubmit="addResult(); return false;">
+    Roll No:
+    <input type="text" id="roll" required>
+
+    WDT Marks:
+    <input type="number" id="wdt" required>
+
+    Python Marks:
+    <input type="number" id="python" required>
+
+    Java Marks:
+    <input type="number" id="java" required>
+
+    <button onclick="calculateResult()">Add Result</button>
+    <button onclick="clearAll()">Clear All</button>
+    <button onclick="printPage()">Print / Download PDF</button>
+
+
+
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>WDT</th>
+            <th>Python</th>
+            <th>Java</th>
+            <th>Total</th>
+            <th>%</th>
+            <th>Grade</th>
+            <th>Result</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+
+</body>
+</html>
